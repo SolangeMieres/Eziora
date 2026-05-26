@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Eziora — Destinos con alma</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:#f7f2eb;
+      color:#3d342f;
+      font-family:'Montserrat', sans-serif;
+      overflow-x:hidden;
+    }
+
+    a{
+      text-decoration:none;
+    }
+
+    img{
+      width:100%;
+      display:block;
+    }
+
+    /* HERO */
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+      url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    .hero-content{
+      max-width:800px;
+      color:white;
+    }
+
+    .logo{
+      font-family:'Cormorant Garamond', serif;
+      font-size:5rem;
+      letter-spacing:4px;
+      margin-bottom:10px;
+    }
+
+    .subtitle{
+      font-size:1.1rem;
+      letter-spacing:3px;
+      margin-bottom:30px;
+      opacity:.9;
+      text-transform:uppercase;
+    }
+
+    .hero-text{
+      font-size:1.1rem;
+      line-height:1.9;
+      margin-bottom:40px;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#f3e6d8;
+      color:#3d342f;
+      padding:15px 35px;
+      border-radius:50px;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-4px);
+      background:white;
+    }
+
+    /* SECTIONS */
+
+    section{
+      padding:90px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-family:'Cormorant Garamond', serif;
+      font-size:3rem;
+      margin-bottom:60px;
+      font-weight:500;
+    }
+
+    /* CATEGORIES */
+
+    .categories{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      transition:.3s;
+    }
+
+    .card:hover{
+      transform:translateY(-8px);
+    }
+
+    .card img{
+      height:260px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:25px;
+    }
+
+    .card h3{
+      font-family:'Cormorant Garamond', serif;
+      font-size:2rem;
+      margin-bottom:10px;
+    }
+
+    .card p{
+      font-size:.95rem;
+      line-height:1.7;
+      color:#6d625c;
+    }
+
+    /* DESTINOS */
+
+    .places{
+      background:#efe7dc;
+    }
+
+    .places-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+      gap:30px;
+    }
+
+    .place-card{
+      background:white;
+      border-radius:25px;
+      overflow:hidden;
+      box-shadow:0 10px 30px rgba(0,0,0,.06);
+      transition:.3s;
+    }
+
+    .place-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .place-card img{
+      height:300px;
+      object-fit:cover;
+    }
+
+    .place-content{
+      padding:28px;
+    }
+
+    .place-content h3{
+      font-family:'Cormorant Garamond', serif;
+      font-size:2.2rem;
+      margin-bottom:12px;
+    }
+
+    .place-content p{
+      color:#6d625c;
+      line-height:1.8;
+      margin-bottom:25px;
+    }
+
+    .place-btn{
+      display:inline-block;
+      padding:13px 28px;
+      background:#3d342f;
+      color:white;
+      border-radius:40px;
+      transition:.3s;
+      font-size:.95rem;
+    }
+
+    .place-btn:hover{
+      background:#5b4d45;
+    }
+
+    /* NEWSLETTER */
+
+    .newsletter{
+      background:white;
+      border-radius:30px;
+      padding:60px 30px;
+      text-align:center;
+      box-shadow:0 10px 40px rgba(0,0,0,.05);
+    }
+
+    .newsletter p{
+      max-width:650px;
+      margin:20px auto 35px;
+      color:#6d625c;
+      line-height:1.9;
+    }
+
+    .newsletter form{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+    }
+
+    .newsletter input{
+      width:320px;
+      padding:16px 20px;
+      border:none;
+      border-radius:50px;
+      background:#f4efe8;
+      font-size:1rem;
+    }
+
+    .newsletter button{
+      border:none;
+      cursor:pointer;
+    }
+
+    /* FOOTER */
+
+    footer{
+      text-align:center;
+      padding:50px 20px;
+      color:#8d817a;
+      font-size:.9rem;
+    }
+
+    /* RESPONSIVE */
+
+    @media(max-width:768px){
+
+      .logo{
+        font-size:3.5rem;
+      }
+
+      .section-title{
+        font-size:2.4rem;
+      }
+
+      .hero-text{
+        font-size:1rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+
+    <div class="hero-content">
+
+      <h1 class="logo">EZIORA</h1>
+
+      <p class="subtitle">
+        destinos con alma ✨
+      </p>
+
+      <p class="hero-text">
+        Escapadas aesthetic, hoteles soñados y lugares únicos para desconectar del ruido.
+      </p>
+
+      <a href="#destinos" class="btn">
+        Descubrir escapadas
+      </a>
+
+    </div>
+
+  </section>
+
+  <!-- CATEGORIAS -->
+
+  <section>
+
+    <h2 class="section-title">
+      Explorá Eziora
+    </h2>
+
+    <div class="categories">
+
+      <div class="card">
+
+        <img src="./bosques.webp">
+
+        <div class="card-content">
+
+          <h3>Bosque</h3>
+
+          <p>
+            Cabañas, lluvia, café caliente y escapadas rodeadas de naturaleza.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="./costaarg.webp">
+
+        <div class="card-content">
+
+          <h3>Costa</h3>
+
+          <p>
+            Médanos, mar y atardeceres suaves para respirar distinto.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Hoteles</h3>
+
+          <p>
+            Espacios minimalistas y experiencias diseñadas para desconectar.
+          </p>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
+
+        <div class="card-content">
+
+          <h3>Cafés</h3>
+
+          <p>
+            Rincones cálidos donde el tiempo parece ir más lento.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- DESTINOS -->
+
+  <section class="places" id="destinos">
+
+    <h2 class="section-title">
+      Escapadas destacadas
+    </h2>
+
+    <div class="places-grid">
+
+      <!-- Valle -->
+
+      <div class="place-card">
+
+        <img src="./valle de los ciervos.png">
+
+        <div class="place-content">
+
+          <h3>Valle de los Ciervos</h3>
+
+          <p>
+            Bosque, calma y desconexión total en Tandil ✨  
+            Una escapada ideal para bajar el ritmo y perderse entre naturaleza.
+          </p>
+
+          <a class="place-btn" href="https://www.instagram.com/valledelosciervos/" target="_blank">
+            Ver alojamiento
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Maria del Bosque -->
+
+      <div class="place-card">
+
+        <img src="./mariadelbosque.jpg">
+
+        <div class="place-content">
+
+          <h3>María del Bosque</h3>
+
+          <p>
+            Un refugio cálido entre bosques y montañas en Bariloche 🌲  
+            Perfecto para escapadas cozy y mañanas lentas.
+          </p>
+
+          <a class="place-btn" href="https://www.mariadelbosque.com.ar/" target="_blank">
+            Descubrir hotel
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- INGA -->
+
+      <div class="place-card">
+
+        <img src="./igna.webp">
+
+        <div class="place-content">
+
+          <h3>INGA by DOT Suites</h3>
+
+          <p>
+            Diseño minimalista, naturaleza y calma en Puerto Iguazú ✨  
+            Una experiencia moderna rodeada de verde.
+          </p>
+
+          <a class="place-btn" href="https://ingabydotsuites.com/portal/es-es/p19/Inicio_INGAbyDOTSuites" target="_blank">
+            Ver experiencia
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Ecoglamping -->
+
+      <div class="place-card">
+
+        <img src="./eco.webp">
+
+        <div class="place-content">
+
+          <h3>Ecoglamping Tafí del Valle</h3>
+
+          <p>
+            Dormir bajo las estrellas nunca se vio tan bien 😭✨  
+            Naturaleza, silencio y desconexión total.
+          </p>
+
+          <a class="place-btn" href="https://ecoglamping.com.ar/" target="_blank">
+            Ver glamping
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Mi Cafecito Rosa -->
+
+      <div class="place-card">
+
+        <img src="./cafecito.webp">
+
+        <div class="place-content">
+
+          <h3>Mi Cafecito Rosa</h3>
+
+          <p>
+            Cafecito, calma y rincones aesthetic en Buenos Aires ✨  
+            Ideal para tardes lentas y charlas eternas.
+          </p>
+
+          <a class="place-btn" href="https://www.instagram.com/micafecitorosa/" target="_blank">
+            Ver cafetería
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- Runa -->
+
+      <div class="place-card">
+
+        <img src="./runa.jpg">
+
+        <div class="place-content">
+
+          <h3>Runa Moraira</h3>
+
+          <p>
+            Costa, diseño y calma frente al mar ✨  
+            Una escapada para respirar distinto.
+          </p>
+
+          <a class="place-btn" href="https://runamoraira.com/" target="_blank">
+            Ver alojamiento
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- NEWSLETTER -->
+
+  <section>
+
+    <div class="newsletter">
+
+      <h2 class="section-title">
+        Sumate a Eziora ✨
+      </h2>
+
+      <p>
+        Recibí escapadas únicas, hoteles increíbles y lugares escondidos para tu próximo viaje.
+      </p>
+
+     <form action="https://formspree.io/f/xzdwjkyv" method="POST">
+
+  <input 
+    type="email" 
+    name="email"
+    placeholder="Tu email"
+    required
+  >
+
+  <button class="btn" type="submit">
+    Suscribirme
+  </button>
+
+</form>
+    </div>
+
+  </section>
+
+  <!-- CONTACTO -->
+
+<section>
+
+  <div class="newsletter">
+
+    <h2 class="section-title">
+      Contacto ✨
+    </h2>
+
+    <p>
+      ¿Tenés un alojamiento, cafetería o experiencia que encaje con Eziora?
+      <br><br>
+      También podés escribirnos para colaboraciones, recomendaciones o consultas.
+    </p>
+
+    <a class="place-btn" href="mailto:eziora.26@gmail.com">
+      eziora.26@gmail.com
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    © 2026 EZIORA — Destinos con alma ✨
+
+  </footer>
+
+</body>
+</html>
