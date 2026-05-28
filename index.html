@@ -38,18 +38,25 @@
       display:block;
     }
 
-
-    .navbar {
+/* Ajuste de la barra */
+.navbar {
   position: fixed;
   top: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 20px;
+  padding: 8px 20px; /* Reduje el 15px a 8px para hacerlo más delgado */
   background: rgba(255,255,255,0.75);
   backdrop-filter: blur(10px);
   z-index: 1000;
+}
+
+/* Ajuste específico para el logo */
+.navbar img {
+  height: 40px; /* Ajusta este valor según lo que prefieras */
+  width: auto;  /* Esto mantiene la proporción de la imagen */
+  display: block;
 }
 
 .logo {
