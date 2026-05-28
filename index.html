@@ -38,6 +38,76 @@
       display:block;
     }
 
+
+    .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  opacity: 0.6;
+}
+
+
+    .instagram-section {
+  padding: 100px 20px;
+  text-align: center;
+  background: #f8f5f2;
+}
+
+.instagram-section h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.instagram-section p {
+  max-width: 600px;
+  margin: auto;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.instagram-btn {
+  display: inline-block;
+  padding: 14px 28px;
+  border-radius: 999px;
+  text-decoration: none;
+  background: #111;
+  color: white;
+  transition: 0.3s;
+}
+
+.instagram-btn:hover {
+  transform: scale(1.03);
+  opacity: 0.9;
+}
     /* HERO */
 
     .hero{
@@ -249,12 +319,18 @@
 
     /* FOOTER */
 
-    footer{
-      text-align:center;
-      padding:50px 20px;
-      color:#8d817a;
-      font-size:.9rem;
-    }
+footer {
+  padding: 60px 20px;
+  text-align: center;
+  background: #111;
+  color: white;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
 
     /* RESPONSIVE */
 
@@ -278,6 +354,19 @@
 </head>
 
 <body>
+
+  <nav class="navbar">
+  <div class="logo">EZIORA ✨</div>
+
+  <div class="nav-links">
+    <a href="#destinos">Destinos</a>
+    <a href="#escapadas">Escapadas</a>
+    <a href="#contacto">Contacto</a>
+    <a href="https://www.instagram.com/eziora.travel/" target="_blank">
+      Instagram
+    </a>
+  </div>
+</nav>
 
   <!-- HERO -->
 
@@ -407,7 +496,7 @@
           </p>
 
           <a class="place-btn" href="https://www.instagram.com/valledelosciervos/" target="_blank">
-            Ver alojamiento
+            Descubrir lugar
           </a>
 
         </div>
@@ -522,7 +611,7 @@
           </p>
 
           <a class="place-btn" href="https://runamoraira.com/" target="_blank">
-            Ver alojamiento
+            Descubrir lugar
           </a>
 
         </div>
@@ -589,13 +678,37 @@
 
 </section>
 
+
+  <section class="instagram-section">
+
+  <h2>Seguí el viaje ✨</h2>
+
+  <p>
+    Escapadas, hoteles escondidos, cafés aesthetic y lugares
+    que dan ganas de desaparecer un finde.
+  </p>
+
+  <a
+    href="https://www.instagram.com/eziora.travel/"
+    target="_blank"
+    class="instagram-btn"
+  >
+    @eziora.travel
+  </a>
+
+</section>
+
   <!-- FOOTER -->
 
-  <footer>
+<footer>
+  <p>
+    Eziora ✨ — Escapadas que se sienten diferentes.
+  </p>
 
-    © 2026 EZIORA — Destinos con alma ✨
-
-  </footer>
+  <a href="mailto:eziora.26@gmail.com">
+    eziora.26@gmail.com
+  </a>
+</footer>
 
 </body>
 </html>
