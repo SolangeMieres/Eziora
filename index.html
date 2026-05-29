@@ -153,6 +153,21 @@ border-bottom:1px solid rgba(0,0,0,.05);
   padding:20px;
 }
 
+
+    .hero{
+  animation:heroZoom 18s ease-in-out infinite alternate;
+}
+
+@keyframes heroZoom{
+  from{
+    background-size:100%;
+  }
+
+  to{
+    background-size:110%;
+  }
+}
+
 /* efecto cinematic */
 .hero::after{
   content:"";
