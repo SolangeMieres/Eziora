@@ -65,6 +65,10 @@
   font-weight: 600;
 }
 
+    .logo-container img{
+  height:42px;
+}
+
 .nav-links {
   display: flex;
   gap: 24px;
@@ -81,6 +85,16 @@
   opacity: 0.6;
 }
 
+
+
+    .vibe-tag{
+  display:inline-block;
+  background:#f3e6d8;
+  padding:8px 14px;
+  border-radius:999px;
+  font-size:.8rem;
+  margin-bottom:16px;
+}
 
     .instagram-section {
   padding: 100px 20px;
@@ -118,9 +132,14 @@
     /* HERO */
 
     .hero{
-      height:100vh;
+      min-height:100vh;
+      position:relative;
+      overflow:hidden;
       background:
-      linear-gradient(rgba(0,0,0,.35), rgba(0,0,0,.35)),
+    linear-gradient (
+    rgba(0,0,0,.45),
+    rgba(0,0,0,.25)
+    ),
       url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1600&auto=format&fit=crop');
       background-size:cover;
       background-position:center;
@@ -247,13 +266,14 @@
       transition:.3s;
     }
 
-    .place-card:hover{
-      transform:translateY(-8px);
-    }
+    .place-card:hover img{
+  transform:scale(1.05);
+}
 
     .place-card img{
       height:300px;
       object-fit:cover;
+      transition:transform .6s ease;
     }
 
     .place-content{
@@ -363,7 +383,9 @@ footer a {
 <body>
 
   <nav class="navbar">
-  <div class="nav-links"> <img src="./logoEziora.png"> </div>
+<div class="logo-container">
+  <img src="./logoEziora.png" alt="Eziora Logo">
+</div>
 
   <div class="nav-links">
     <a href="#Explorá">Destinos</a>
@@ -384,7 +406,7 @@ footer a {
       <h1 class="logo">EZIORA</h1>
 
       <p class="subtitle">
-        destinos con alma ✨
+       lugares que se sienten irreales ✨
       </p>
 
       <p class="hero-text">
@@ -392,7 +414,7 @@ footer a {
       </p>
 
       <a href="#destinos" class="btn">
-        Descubrir escapadas
+        Quiero escaparme
       </a>
 
     </div>
@@ -415,7 +437,7 @@ footer a {
 
         <div class="card-content">
 
-          <h3>Bosque</h3>
+          <span class="vibe-tag">Bosque 🌲</span>
 
           <p>
             Cabañas, lluvia, café caliente y escapadas rodeadas de naturaleza.
@@ -431,7 +453,7 @@ footer a {
 
         <div class="card-content">
 
-          <h3>Costa</h3>
+        <span class="vibe-tag">Costa ✨</span>
 
           <p>
             Médanos, mar y atardeceres suaves para respirar distinto.
@@ -447,7 +469,7 @@ footer a {
 
         <div class="card-content">
 
-          <h3>Hoteles</h3>
+         <span class="vibe-tag">Hoteles ✨</span>
 
           <p>
             Espacios minimalistas y experiencias diseñadas para desconectar.
@@ -463,7 +485,7 @@ footer a {
 
         <div class="card-content">
 
-          <h3>Cafés</h3>
+         <span class="vibe-tag">café✨</span>
 
           <p>
             Rincones cálidos donde el tiempo parece ir más lento.
@@ -688,6 +710,10 @@ footer a {
 
   <section class="instagram-section">
 
+    <p class="ig-small">
++ reels diarios de escapadas aesthetic
+</p>
+
   <h2>Seguí el viaje ✨</h2>
 
   <p>
@@ -708,6 +734,10 @@ footer a {
   <!-- FOOTER -->
 
 <footer>
+
+  <p class="footer-quote">
+  guardá esta página para cuando necesites desaparecer un finde ✨
+</p>
   <p>
     Eziora ✨ — Escapadas que se sienten diferentes.
   </p>
