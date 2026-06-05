@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
- 
-  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Eziora — Destinos con alma</title>
 
+  <!-- ═══════════════════════════════════════════
+       SEO
+  ═══════════════════════════════════════════ -->
+  <meta name="description" content="Escapadas aesthetic, hoteles soñados y lugares únicos para desconectar del ruido. Refugios seleccionados en Argentina.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://eziora.vercel.app">
+
+  <!-- ═══════════════════════════════════════════
+       OPEN GRAPH (WhatsApp, Facebook, LinkedIn, Pinterest)
+       Imagen requerida: /og-image.jpg — 1200×630px
+  ═══════════════════════════════════════════ -->
+  <meta property="og:type"        content="website">
+  <meta property="og:url"         content="https://eziora.vercel.app">
+  <meta property="og:title"       content="Eziora — Destinos con alma">
+  <meta property="og:description" content="Escapadas aesthetic, hoteles soñados y lugares únicos para desconectar del ruido. Refugios seleccionados en Argentina.">
+  <meta property="og:image"       content="https://eziora.vercel.app/og-image.jpg">
+  <meta property="og:image:width"  content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale"      content="es_AR">
+  <meta property="og:site_name"   content="Eziora">
+
+  <!-- ═══════════════════════════════════════════
+       TWITTER / X CARD (también usada por Telegram e IG al parsear links)
+  ═══════════════════════════════════════════ -->
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Eziora — Destinos con alma">
+  <meta name="twitter:description" content="Escapadas aesthetic, hoteles soñados y lugares únicos para desconectar del ruido.">
+  <meta name="twitter:image"       content="https://eziora.vercel.app/og-image.jpg">
+
+  <!-- ═══════════════════════════════════════════
+       GOOGLE ANALYTICS  (movido adentro del <head>)
+  ═══════════════════════════════════════════ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-LH76N42WHM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-LH76N42WHM');
+  </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
 
   <style>
@@ -48,16 +85,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px; /* Reduje el 15px a 8px para hacerlo más delgado */
-border-bottom:1px solid rgba(0,0,0,.05);
+  padding: 10px 20px;
+  border-bottom:1px solid rgba(0,0,0,.05);
   backdrop-filter: blur(10px);
   z-index: 1000;
 }
 
 /* Ajuste específico para el logo */
 .navbar img {
-  height: 40px; /* Ajusta este valor según lo que prefieras */
-  width: auto;  /* Esto mantiene la proporción de la imagen */
+  height: 40px;
+  width: auto;
   display: block;
 }
 
@@ -435,37 +472,27 @@ footer a {
   </style>
 </head>
 
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LH76N42WHM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LH76N42WHM');
-</script>
-
 <body>
 
   <nav class="navbar">
-<div class="logo-container">
-  <img src="./logoEziora.png" alt="Eziora Logo">
-</div>
+    <div class="logo-container">
+      <img src="./logoEziora.png" alt="Eziora Logo">
+    </div>
 
-  <div class="nav-links">
-    <a href="#Explorá">Destinos</a>
-    <a href="#Escapadas">Escapadas</a>
-    <a href="#Contacto">Contacto</a>
-    <a href="https://www.instagram.com/eziora.travel/" target="_blank">
-      Instagram
-    </a>
+    <div class="nav-links">
+      <a href="#Explorá">Destinos</a>
+      <a href="#Escapadas">Escapadas</a>
+      <a href="#Contacto">Contacto</a>
+      <a href="https://www.instagram.com/eziora.travel/" target="_blank">
+        Instagram
+      </a>
+    </div>
+  </nav>
+
+  <div class="hero-badge">
+    🌿 escapadas seleccionadas por Eziora
   </div>
-</nav>
 
-<div class="hero-badge">
-🌿 escapadas seleccionadas por Eziora
-</div>
-  
   <!-- HERO -->
 
   <section class="hero">
@@ -492,7 +519,7 @@ footer a {
 
   <!-- CATEGORIAS -->
 
-  <section id= "Explorá">
+  <section id="Explorá">
 
     <h2 class="section-title">
       Explorá Eziora
@@ -501,67 +528,35 @@ footer a {
     <div class="categories">
 
       <div class="card">
-
         <img src="./bosques.webp">
-
         <div class="card-content">
-
           <span class="vibe-tag">Bosque 🌲</span>
-
-          <p>
-            Cabañas, lluvia, café caliente y escapadas rodeadas de naturaleza.
-          </p>
-
+          <p>Cabañas, lluvia, café caliente y escapadas rodeadas de naturaleza.</p>
         </div>
-
       </div>
 
       <div class="card">
-
         <img src="./costaarg.webp">
-
         <div class="card-content">
-
-        <span class="vibe-tag">Costa 🌊</span>
-
-          <p>
-            Médanos, mar y atardeceres suaves para respirar distinto.
-          </p>
-
+          <span class="vibe-tag">Costa 🌊</span>
+          <p>Médanos, mar y atardeceres suaves para respirar distinto.</p>
         </div>
-
       </div>
 
       <div class="card">
-
         <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop">
-
         <div class="card-content">
-
-         <span class="vibe-tag">Hoteles 🧳</span>
-
-          <p>
-            Espacios minimalistas y experiencias diseñadas para desconectar.
-          </p>
-
+          <span class="vibe-tag">Hoteles 🧳</span>
+          <p>Espacios minimalistas y experiencias diseñadas para desconectar.</p>
         </div>
-
       </div>
 
       <div class="card">
-
         <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?q=80&w=1200&auto=format&fit=crop">
-
         <div class="card-content">
-
-         <span class="vibe-tag">Café☕</span>
-
-          <p>
-            Rincones cálidos donde el tiempo parece ir más lento.
-          </p>
-
+          <span class="vibe-tag">Café☕</span>
+          <p>Rincones cálidos donde el tiempo parece ir más lento.</p>
         </div>
-
       </div>
 
     </div>
@@ -572,249 +567,123 @@ footer a {
 
   <section class="places" id="destinos">
 
-    <h2 id= "Escapadas" class="section-title">
+    <h2 id="Escapadas" class="section-title">
       Escapadas destacadas
     </h2>
 
-    <p style="
-max-width:700px;
-margin:0 auto 50px;
-text-align:center;
-color:#6d625c;
-line-height:1.8;
-">
-Una selección exclusiva de refugios únicos en Argentina.
-Sin listas infinitas. Sin hoteles genéricos.
-Solo lugares que realmente merecen el viaje.
-</p>
+    <p style="max-width:700px;margin:0 auto 50px;text-align:center;color:#6d625c;line-height:1.8;">
+      Una selección exclusiva de refugios únicos en Argentina.
+      Sin listas infinitas. Sin hoteles genéricos.
+      Solo lugares que realmente merecen el viaje.
+    </p>
 
     <div class="places-grid">
 
       <div class="place-card">
+        <img src="./loi-suites.webp">
+        <div class="place-content">
+          <span class="vibe-tag">Selva 🌿</span>
+          <h3>Loi Suites Iguazú</h3>
+          <p>Pasarelas suspendidas entre la selva, piscinas escondidas y una experiencia diseñada para desconectar.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/74EIOVk" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./lasbalsas.avif">
+        <div class="place-content">
+          <span class="vibe-tag">Bosque 🌲</span>
+          <h3>Las Balsas Relais &amp; Châteaux</h3>
+          <p>Frente al lago Nahuel Huapi, un refugio elegante rodeado de bosque y tranquilidad patagónica.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/cVAyk7m" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./llao.webp">
+        <div class="place-content">
+          <span class="vibe-tag">Montaña 🏔️</span>
+          <h3>Llao Llao Resort</h3>
+          <p>Uno de los hoteles más icónicos de Argentina, rodeado por lagos y montañas.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/c5vMh7n" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./piatelli.avif">
+        <div class="place-content">
+          <span class="vibe-tag">Viñedos 🍷</span>
+          <h3>Piattelli Wine Resort</h3>
+          <p>Viñedos, gastronomía y paisajes de Cafayate para una escapada diferente.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/yOxkFDD" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./arakur.avif">
+        <div class="place-content">
+          <span class="vibe-tag">Patagonia ❄️</span>
+          <h3>Arakur Ushuaia Resort &amp; Spa</h3>
+          <p>Naturaleza extrema, vistas infinitas y spa en el fin del mundo.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/qYofZ6P" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./andeluna.webp">
+        <div class="place-content">
+          <span class="vibe-tag">Viñedos 🍇</span>
+          <h3>Andeluna Winery Lodge</h3>
+          <p>Entre montañas y viñedos mendocinos, una experiencia pensada para bajar el ritmo.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/eGKHeCN" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./rosell.webp">
+        <div class="place-content">
+          <span class="vibe-tag">Wine Escape 🍷</span>
+          <h3>Rosell Boher Lodge &amp; Spa</h3>
+          <p>Suites privadas, spa y viñedos con vistas espectaculares en Mendoza.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/ez5V3Kn" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
+
+      <div class="place-card">
+        <img src="./entrearboles.avif">
+        <div class="place-content">
+          <span class="vibe-tag">Selva 🌿</span>
+          <h3>Entre Árboles Iguazú</h3>
+          <p>Un refugio escondido en plena naturaleza para desconectar del ruido cotidiano.</p>
+          <a class="place-btn" href="https://expedia.com/affiliate/cbUB4bp" target="_blank">Descubrir refugio</a>
+        </div>
+      </div>
 
-  <img src="./loi-suites.webp">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Selva 🌿</span>
-
-<h3>Loi Suites Iguazú</h3>
-
-<p>
-  Pasarelas suspendidas entre la selva, piscinas escondidas y una experiencia diseñada para desconectar.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/74EIOVk" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./lasbalsas.avif">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Bosque 🌲</span>
-
-<h3>Las Balsas Relais & Châteaux</h3>
-
-<p>
-  Frente al lago Nahuel Huapi, un refugio elegante rodeado de bosque y tranquilidad patagónica.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/cVAyk7m" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./llao.webp">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Montaña 🏔️</span>
-
-<h3>Llao Llao Resort</h3>
-
-<p>
-  Uno de los hoteles más icónicos de Argentina, rodeado por lagos y montañas.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/c5vMh7n" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./piatelli.avif">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Viñedos 🍷</span>
-
-<h3>Piattelli Wine Resort</h3>
-
-<p>
-  Viñedos, gastronomía y paisajes de Cafayate para una escapada diferente.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/yOxkFDD" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./arakur.avif">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Patagonia ❄️</span>
-
-<h3>Arakur Ushuaia Resort & Spa</h3>
-
-<p>
-  Naturaleza extrema, vistas infinitas y spa en el fin del mundo.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/qYofZ6P" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./andeluna.webp">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Viñedos 🍇</span>
-
-<h3>Andeluna Winery Lodge</h3>
-
-<p>
-  Entre montañas y viñedos mendocinos, una experiencia pensada para bajar el ritmo.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/eGKHeCN" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./rosell.webp">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Wine Escape 🍷</span>
-
-<h3>Rosell Boher Lodge & Spa</h3>
-
-<p>
-  Suites privadas, spa y viñedos con vistas espectaculares en Mendoza.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/ez5V3Kn" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-</div>
-
-<div class="place-card">
-
-  <img src="./entrearboles.avif">
-
-  <div class="place-content">
-
-
-<span class="vibe-tag">Selva 🌿</span>
-
-<h3>Entre Árboles Iguazú</h3>
-
-<p>
-  Un refugio escondido en plena naturaleza para desconectar del ruido cotidiano.
-</p>
-
-<a class="place-btn" href="https://expedia.com/affiliate/cbUB4bp" target="_blank">
-  Descubrir refugio
-</a>
-
-
-  </div>
-
-      
     </div>
 
   </section>
 
+  <!-- TRAVEL ESSENTIALS -->
 
-<!-- TRAVEL ESSENTIALS -->
+  <section>
 
-<section>
+    <h2 class="section-title">
+      Travel Essentials ✈️
+    </h2>
 
-  <h2 class="section-title">
-    Travel Essentials ✈️
-  </h2>
+    <div class="newsletter">
+      <p>
+        Pequeñas cosas que hacen los viajes muchísimo más fáciles.
+        <br><br>
+        Tener internet apenas aterrizás ⋆｡˚ ☁︎ ˚｡⋆
+      </p>
+      <a class="btn" href="https://www.anrdoezrs.net/click-101761943-17235804" target="_blank">
+        📶 Travel WiFi
+      </a>
+    </div>
 
-  <div class="newsletter">
+  </section>
 
-<p>
-  Pequeñas cosas que hacen los viajes muchísimo más fáciles.
-  <br><br>
-  Tener internet apenas aterrizás ⋆｡˚ ☁︎ ˚｡⋆
-</p>
-
-<a 
-  class="btn" 
-  href="https://www.anrdoezrs.net/click-101761943-17235804"
-  target="_blank"
->
-  📶 Travel WiFi
-</a>
-
-  </div>
-
-</section>
-
-  
   <!-- NEWSLETTER -->
 
   <section>
@@ -829,87 +698,80 @@ Solo lugares que realmente merecen el viaje.
         Recibí escapadas únicas, hoteles increíbles y lugares escondidos para tu próximo viaje.
       </p>
 
-     <form action="https://formspree.io/f/xzdwjkyv" method="POST">
+      <form action="https://formspree.io/f/xzdwjkyv" method="POST">
+        <input
+          type="email"
+          name="email"
+          placeholder="Tu email"
+          required
+        >
+        <button class="btn" type="submit">
+          Suscribirme
+        </button>
+      </form>
 
-  <input 
-    type="email" 
-    name="email"
-    placeholder="Tu email"
-    required
-  >
-
-  <button class="btn" type="submit">
-    Suscribirme
-  </button>
-
-</form>
     </div>
 
   </section>
 
   <!-- CONTACTO -->
 
-<section id= "Contacto">
+  <section id="Contacto">
 
-  <div class="newsletter">
+    <div class="newsletter">
 
-    <h2 class="section-title">
-      Contacto
-    </h2>
+      <h2 class="section-title">
+        Contacto
+      </h2>
 
-    <p>
-      ¿Tenés un alojamiento, cafetería o experiencia que encaje con Eziora?
-      <br><br>
-      También podés escribirnos para colaboraciones, recomendaciones o consultas.
-    </p>
+      <p>
+        ¿Tenés un alojamiento, cafetería o experiencia que encaje con Eziora?
+        <br><br>
+        También podés escribirnos para colaboraciones, recomendaciones o consultas.
+      </p>
 
-    <a class="place-btn" href="mailto:eziora.26@gmail.com">
-      eziora.26@gmail.com
-    </a>
+      <a class="place-btn" href="mailto:eziora.26@gmail.com">
+        eziora.26@gmail.com
+      </a>
 
-  </div>
+    </div>
 
-</section>
-
+  </section>
 
   <section class="instagram-section">
 
-    <p class="ig-small">
-+ reels diarios de escapadas aesthetic
-</p>
+    <p class="ig-small">+ reels diarios de escapadas aesthetic</p>
 
-  <h2>Seguí el viaje ✨</h2>
+    <h2>Seguí el viaje ✨</h2>
 
-  <p>
-    Escapadas, hoteles escondidos, cafés aesthetic y lugares
-    que dan ganas de desaparecer un finde.
-  </p>
+    <p>
+      Escapadas, hoteles escondidos, cafés aesthetic y lugares
+      que dan ganas de desaparecer un finde.
+    </p>
 
-  <a
-    href="https://www.instagram.com/eziora.travel/"
-    target="_blank"
-    class="instagram-btn"
-  >
-    @eziora.travel
-  </a>
+    <a
+      href="https://www.instagram.com/eziora.travel/"
+      target="_blank"
+      class="instagram-btn"
+    >
+      @eziora.travel
+    </a>
 
-</section>
+  </section>
 
   <!-- FOOTER -->
 
-<footer>
-
-  <p class="footer-quote">
-  guardá esta página para cuando necesites desaparecer un finde ✨
-</p>
-  <p>
-    Eziora 🤍 — Escapadas que se sienten diferentes.
-  </p>
-
-  <a href="mailto:eziora.26@gmail.com">
-    eziora.26@gmail.com
-  </a>
-</footer>
+  <footer>
+    <p class="footer-quote">
+      guardá esta página para cuando necesites desaparecer un finde ✨
+    </p>
+    <p>
+      Eziora 🤍 — Escapadas que se sienten diferentes.
+    </p>
+    <a href="mailto:eziora.26@gmail.com">
+      eziora.26@gmail.com
+    </a>
+  </footer>
 
 </body>
 </html>
