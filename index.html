@@ -302,6 +302,7 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
       gap:25px;
+      align-items:stretch;
     }
 
     .card{
@@ -310,6 +311,9 @@
       overflow:hidden;
       box-shadow:0 10px 30px rgba(0,0,0,.06);
       transition:.3s;
+      display:flex;
+      flex-direction:column;
+      height:100%;
     }
 
     .card:hover{
@@ -323,6 +327,9 @@
 
     .card-content{
       padding:25px;
+      display:flex;
+      flex-direction:column;
+      flex:1;
     }
 
     .card h3{
@@ -347,6 +354,7 @@
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
       gap:30px;
+      align-items:stretch;
     }
 
     .place-card{
@@ -355,6 +363,9 @@
       overflow:hidden;
       box-shadow:0 10px 30px rgba(0,0,0,.06);
       transition:.3s;
+      display:flex;
+      flex-direction:column;
+      height:100%;
     }
 
     .place-card:hover img{
@@ -369,6 +380,9 @@
 
     .place-content{
       padding:28px;
+      display:flex;
+      flex-direction:column;
+      flex:1;
     }
 
     .place-content h3{
@@ -391,6 +405,8 @@
       border-radius:40px;
       transition:.3s;
       font-size:.95rem;
+      align-self:flex-start;
+      margin-top:auto;
     }
 
     .place-btn:hover{
@@ -679,7 +695,7 @@ footer a {
     <div class="places-grid">
 
       <div class="place-card">
-        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=800&auto=format&fit=crop" alt="King David Flat Hotel Córdoba">
+        <img src="./kingdavid-pool.jpg" alt="King David Flat Hotel Córdoba">
         <div class="place-content">
           <span class="vibe-tag">Ciudad 🏙️ · Córdoba</span>
           <h3>King David Flat Hotel</h3>
@@ -690,7 +706,7 @@ footer a {
       </div>
 
       <div class="place-card">
-        <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?q=80&w=800&auto=format&fit=crop" alt="Hotel Marilian Salta">
+        <img src="./marilian-interior.jpg" alt="Hotel Marilian Salta">
         <div class="place-content">
           <span class="vibe-tag">Norte ☀️ · Salta</span>
           <h3>Hotel Marilian</h3>
@@ -701,18 +717,18 @@ footer a {
       </div>
 
       <div class="place-card">
-        <img src="https://images.unsplash.com/photo-1529290130-4ca3753253ae?q=80&w=800&auto=format&fit=crop" alt="Argenta Tower Buenos Aires">
+        <img src="./argenta-pool.jpg" alt="Argenta Tower Buenos Aires">
         <div class="place-content">
           <span class="vibe-tag">Porteño 🏛️ · Buenos Aires</span>
           <h3>Argenta Tower Hotel & Suites</h3>
           <p>Hotel con pileta en Retiro, Buenos Aires. Vistas al skyline porteño y ubicación inmejorable.</p>
-          <a class="place-btn" href="https://www.anrdoezrs.net/click-101761943-17293137?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Far%2Fargenta-tower.es-ar.html" target="_top">Ver en Booking</a>
+          <a class="place-btn" href="https://www.anrdoezrs.net/click-101761943-17293137?url=https%3A%2F%2Fwww.booking.com%2Fhotel%2Far%2Fargenta-tower-suites.es.html" target="_top">Ver en Booking</a>
           <img src="https://www.tqlkg.com/image-101761943-17293137" width="1" height="1" border="0"/>
         </div>
       </div>
 
       <div class="place-card">
-        <img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?q=80&w=800&auto=format&fit=crop" alt="Cerro Calafate Hotel">
+        <img src="./cerrocalafate-exterior.jpg" alt="Cerro Calafate Hotel">
         <div class="place-content">
           <span class="vibe-tag">Patagonia ❄️ · El Calafate</span>
           <h3>Cerro Calafate Hotel</h3>
@@ -723,7 +739,7 @@ footer a {
       </div>
 
       <div class="place-card">
-        <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?q=80&w=800&auto=format&fit=crop" alt="Hotel La Toscana San Ignacio">
+        <img src="./latoscana-pool.jpg" alt="Hotel La Toscana San Ignacio">
         <div class="place-content">
           <span class="vibe-tag">Selva 🌿 · Misiones</span>
           <h3>Hotel La Toscana</h3>
@@ -779,7 +795,7 @@ footer a {
           <span class="vibe-tag">Trenes · Ferries · Buses</span>
           <h3 style="font-size:1.5rem;margin-bottom:10px;">Viajá por Asia y el mundo</h3>
           <p style="margin-bottom:20px;">Reservas de transporte en más de 30 países. Confirmación instantánea.</p>
-          <a class="place-btn" href="https://www.tkqlhce.com/click-101761943-17115164" target="_blank">
+          <a class="place-btn" style="align-self:center;" href="https://www.tkqlhce.com/click-101761943-17115164" target="_blank">
             Reservar viaje
           </a>
           <img src="https://www.tqlkg.com/image-101761943-17115164" width="1" height="1" border="0"/>
@@ -792,7 +808,7 @@ footer a {
           <span class="vibe-tag">Rutas populares</span>
           <h3 style="font-size:1.5rem;margin-bottom:10px;">Rutas imperdibles</h3>
           <p style="margin-bottom:20px;">Bangkok → Chiang Mai, Tokyo → Kyoto, Vietnam en tren y mucho más.</p>
-          <a class="place-btn" href="https://www.anrdoezrs.net/click-101761943-17115171" target="_blank">
+          <a class="place-btn" style="align-self:center;" href="https://www.anrdoezrs.net/click-101761943-17115171" target="_blank">
             Ver rutas
           </a>
           <img src="https://www.tqlkg.com/image-101761943-17115171" width="1" height="1" border="0"/>
@@ -805,7 +821,7 @@ footer a {
           <span class="vibe-tag">Rail Passes</span>
           <h3 style="font-size:1.5rem;margin-bottom:10px;">Pases de tren</h3>
           <p style="margin-bottom:20px;">Eurail, Japan Rail Pass y más. La forma más libre de moverse por Europa y Asia.</p>
-          <a class="place-btn" href="https://www.tkqlhce.com/click-101761943-17115177" target="_blank">
+          <a class="place-btn" style="align-self:center;" href="https://www.tkqlhce.com/click-101761943-17115177" target="_blank">
             Ver pases
           </a>
           <img src="https://www.tqlkg.com/image-101761943-17115177" width="1" height="1" border="0"/>
